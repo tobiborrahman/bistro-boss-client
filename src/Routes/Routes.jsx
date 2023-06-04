@@ -76,7 +76,7 @@ export const router = createBrowserRouter([
 				path: 'reservation',
 				element: <Payment></Payment>,
 			},
-			
+
 			// Admin routes
 			{
 				path: 'adminHome',

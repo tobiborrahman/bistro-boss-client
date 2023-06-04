@@ -11,9 +11,12 @@ const AllUsers = () => {
 	});
 
 	const handleMakeAdmin = (user) => {
-		fetch(`http://localhost:5000/users/admin/${user._id}`, {
-			method: 'PATCH',
-		})
+		fetch(
+			`https://bistro-boss-server-tobibur2021.vercel.app/users/admin/${user._id}`,
+			{
+				method: 'PATCH',
+			}
+		)
 			.then((res) => res.json())
 			.then((data) => {
 				console.log(data);

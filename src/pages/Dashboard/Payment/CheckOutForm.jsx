@@ -3,7 +3,7 @@ import { useState } from 'react';
 import useAxiosSecure from '../../../hooks/useAxiosSecure';
 import { useEffect } from 'react';
 import useAuth from '../../../hooks/useAuth';
-import './CheckoutForm.css';
+// import './CheckoutForm.css';
 
 const CheckOutForm = ({ cart, price }) => {
 	const stripe = useStripe();
@@ -100,6 +100,7 @@ const CheckOutForm = ({ cart, price }) => {
 		<>
 			<form className="w-2/3 mx-auto mt-10" onSubmit={handleSubmit}>
 				<CardElement
+					className="border p-3 rounded"
 					options={{
 						style: {
 							base: {

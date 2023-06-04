@@ -21,7 +21,7 @@ const FoodCard = ({ item }) => {
 				image,
 				email: user.email,
 			};
-			fetch('http://localhost:5000/carts', {
+			fetch('https://bistro-boss-server-tobibur2021.vercel.app/carts', {
 				method: 'POST',
 				headers: {
 					'content-type': 'application/json',
